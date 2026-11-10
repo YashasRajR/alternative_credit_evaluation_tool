@@ -1,0 +1,58 @@
+/* Result: the loan record */
+.record { margin-bottom: 40px; }
+.record-head { display: flex; justify-content: space-between; gap: 28px; align-items: flex-start; }
+.record-head h1 { font-size: 50px; margin-top: 6px; }
+.record-head p { margin: 0; }
+.record-score { margin: 26px 0 0; max-width: 680px; }
+.record-score p { margin: 0; }
+.record-call { margin-top: 26px; padding-top: 18px; border-top: 2px solid var(--ink); display: grid; grid-template-columns: 1fr 1.3fr; gap: 28px; align-items: start; }
+.call-reason { margin: 0; font-size: 18px; line-height: 1.45; }
+.figures { margin: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.figures div { display: flex; flex-direction: column-reverse; gap: 2px; }
+.figures dt { color: var(--muted); font-size: 14px; }
+.figures dd { margin: 0; font-family: var(--display); font-stretch: 100%; font-weight: 650; font-size: 28px; line-height: 1.1; font-variant-numeric: tabular-nums; }
+.note { grid-column: 1 / -1; color: var(--red); margin: 0; }
+
+/* Sections below the record sit straight on the desk, divided by a heavy rule */
+.section { border-top: 2px solid var(--ink); padding-top: 14px; margin-bottom: 40px; }
+.cols { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
+.stack > .section:last-child { margin-bottom: 0; }
+
+.factors { list-style: none; margin: 14px 0 0; padding: 0; }
+.factors li { padding: 10px 0 11px; border-bottom: 1px solid #c9d1dc; }
+.factor-top { display: flex; align-items: baseline; gap: 8px; font-weight: 600; }
+.factor-top::after { content: ""; order: 1; flex: 1; border-bottom: 2px dotted #aab3c1; transform: translateY(-4px); }
+.factor-top b { order: 2; font-family: var(--display); font-weight: 700; font-size: 19px; font-variant-numeric: tabular-nums; }
+.factor-top small { color: var(--muted); font-weight: 500; font-size: 14px; }
+.meter { height: 4px; background: #d3d9e2; margin: 4px 0 4px; }
+.meter span { display: block; height: 100%; background: var(--ink); }
+.meter span.low { background: var(--red); }
+.factors p { margin: 0; }
+
+.ledger { margin: 12px 0 0; }
+.ledger div { display: flex; justify-content: space-between; gap: 16px; padding: 9px 0; border-bottom: 1px solid #c9d1dc; }
+.ledger dt { color: var(--muted); } .ledger dd { margin: 0; text-align: right; font-variant-numeric: tabular-nums; }
+.ledger .total { border-bottom: 3px double var(--ink); }
+.ledger .total dt { color: var(--ink); font-weight: 600; } .ledger .total dd { font-weight: 600; }
+
+.drivers { list-style: none; padding: 0; margin: 14px 0 0; display: grid; gap: 10px; }
+.drivers li { display: grid; grid-template-columns: minmax(0, 1.4fr) 1fr 86px; gap: 12px; align-items: center; font-size: 15px; }
+.dbar { position: relative; height: 10px; }
+.dbar::after { content: ""; position: absolute; left: 50%; top: -4px; bottom: -4px; width: 2px; background: var(--ink); }
+.dbar span { position: absolute; top: 0; bottom: 0; }
+.dbar .up { left: 50%; background: var(--red); }
+.dbar .down { right: 50%; background: var(--green); }
+.up-t { color: var(--red); } .down-t { color: var(--green); }
+
+.actions { list-style: none; padding: 0; margin: 16px 0 0; display: grid; grid-template-columns: 1fr 1fr; gap: 16px 40px; }
+.actions li { display: flex; gap: 16px; align-items: flex-start; }
+.actions p { margin: 2px 0 0; }
+.plus { font-family: var(--display); font-stretch: 100%; font-weight: 800; font-size: 26px; line-height: 1.1; color: var(--violet); min-width: 44px; }
+.callout { border-left: 4px solid var(--violet); background: var(--violet-wash); padding: 12px 16px; margin: 12px 0 16px; }
+
+.table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 15.5px; }
+.table th { text-align: left; font-size: 13.5px; color: var(--muted); font-weight: 600; padding: 6px 10px; border-bottom: 2px solid var(--ink); }
+.table td { padding: 12px 10px; border-bottom: 1px solid #c9d1dc; vertical-align: middle; }
+.table .num { text-align: right; font-variant-numeric: tabular-nums; }
+.tag { margin-left: 8px; font-size: 12.5px; font-weight: 600; color: var(--violet); border: 1.5px solid var(--violet); padding: 0 7px; border-radius: 999px; }
+.chip { display: inline-block; width: 24px; height: 24px; line-height: 25px; text-align: center; border-radius: 50%; color: #fff; font-family: var(--display); font-weight: 700; font-size: 13px; margin-right: 6px; }
