@@ -1,0 +1,10 @@
+/* Ruled paper, shared by the record, the form and the register */
+.paper, .record, .register, .sheet {
+  position: relative;
+  background-color: var(--paper);
+  background-image:
+    linear-gradient(90deg, transparent 54px, var(--margin) 54px, var(--margin) 55.5px, transparent 55.5px),
+    repeating-linear-gradient(180deg, transparent 0 calc(var(--line-h) - 1px), var(--rule) calc(var(--line-h) - 1px) var(--line-h));
+  box-shadow: 0 1px 0 #c9d1dc, 0 10px 24px -14px rgba(29, 36, 51, .35);
+  padding: 30px 36px 32px 84px;
+}
