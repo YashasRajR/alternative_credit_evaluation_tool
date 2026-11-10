@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+.pytest_cache/
+backend/models/
+
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# One-time helper script
+make_commits.bat
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.env
