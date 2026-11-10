@@ -1,3 +1,9 @@
+<!-- profile-card:start -->
+<p align="center">
+  <a href="https://github.com/YashasRajR"><img src="https://raw.githubusercontent.com/YashasRajR/YashasRajR/main/cards/headers/alternative_credit_evaluation_tool.svg" width="100%" alt="AgriCred" /></a>
+</p>
+<!-- profile-card:end -->
+
 # AgriCred: Alternative Credit Evaluation for Farmers
 
 Many smallholder farmers in India have no formal credit history, so banks and microfinance lenders struggle to judge them. **AgriCred** helps a loan officer assess a farmer using **alternative data**: land and tenure, irrigation, harvest history, livestock and other income, Self-Help Group (SHG) membership, savings, UPI payment activity, crop insurance and Soil Health Card status.
