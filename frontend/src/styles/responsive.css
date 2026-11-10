@@ -1,0 +1,25 @@
+/* Small screens, and people who prefer less motion. */
+@media (prefers-reduced-motion: reduce) { .stamp { animation: none; } }
+
+@media (max-width: 860px) {
+  .topbar { flex-direction: column; align-items: stretch; gap: 6px; padding: 12px 16px 0; }
+  .brand { padding-bottom: 4px; }
+  nav button { flex: 1; padding: 9px 6px 8px; white-space: nowrap; font-size: 15px; }
+  main { padding: 24px 12px 48px; }
+  .paper, .record, .register, .sheet { padding: 22px 18px 24px 40px; background-image:
+    linear-gradient(90deg, transparent 24px, var(--margin) 24px, var(--margin) 25.5px, transparent 25.5px),
+    repeating-linear-gradient(180deg, transparent 0 calc(var(--line-h) - 1px), var(--rule) calc(var(--line-h) - 1px) var(--line-h)); }
+  h1 { font-size: 32px; } .record-head h1 { font-size: 38px; }
+  .record-head { flex-direction: column; }
+  .stamp { width: min(280px, 90%); margin: 4px auto 0; }
+  .record-call { grid-template-columns: 1fr; }
+  .figures dd { font-size: 23px; }
+  .drivers li { grid-template-columns: 1fr 86px; } .drivers .dbar { grid-column: 1 / -1; grid-row: 2; }
+  .grid, .checks, .cols, .actions { grid-template-columns: 1fr; }
+  .page-head, .table-head { flex-direction: column; align-items: stretch; }
+  .search { width: 100%; }
+  .summary { font-size: 18px; }
+  .steps { padding-left: 0; } .steps button { padding: 8px 10px; font-size: 14.5px; }
+  .register { overflow-x: auto; }
+  .table { font-size: 14px; }
+}
