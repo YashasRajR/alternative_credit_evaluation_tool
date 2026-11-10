@@ -1,0 +1,33 @@
+/* Form */
+.steps { list-style: none; padding: 0 0 0 48px; margin: 0; display: flex; gap: 4px; }
+.steps button { padding: 9px 18px 8px; font-weight: 600; color: var(--muted); display: flex; gap: 8px; align-items: baseline; border-radius: 8px 8px 0 0; background: #dde3ea; }
+.steps .n { font-family: var(--display); font-weight: 700; }
+.steps li.done button { color: var(--ink); cursor: pointer; }
+.steps li.done .n::after { content: " ✓"; color: var(--green); }
+.steps li.now button { background: var(--paper); color: var(--ink); box-shadow: inset 0 3px 0 var(--violet); }
+.steps button:disabled { opacity: 1; cursor: default; }
+
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px 28px; align-items: start; }
+.field { display: flex; flex-direction: column; gap: 4px; }
+.field.wide, .checks.wide { grid-column: 1 / -1; }
+.field-label { font-weight: 600; font-size: 15px; }
+.field-hint { font-size: 13.5px; color: var(--muted); }
+.field input, .field select { padding: 6px 2px; border: none; border-bottom: 2px solid var(--ink); background: transparent; font-size: 18px; border-radius: 0; }
+.field input:focus, .field select:focus { outline: none; border-bottom-color: var(--violet); background: var(--violet-wash); }
+.pills { display: flex; flex-wrap: wrap; gap: 6px; }
+.pill { padding: 6px 15px; border-radius: 999px; border: 1.5px solid #9aa4b4; background: var(--paper); font-weight: 500; font-size: 15px; }
+.pill:hover { border-color: var(--ink); }
+.pill.on { background: var(--ink); border-color: var(--ink); color: #fff; }
+.radios { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 6px 10px; }
+.radio { display: flex; gap: 10px; align-items: center; padding: 8px 12px; border: 1.5px solid transparent; border-radius: 6px; cursor: pointer; }
+.radio.on { border-color: var(--ink); background: var(--paper); }
+.radio input { accent-color: var(--violet); width: 18px; height: 18px; }
+.checks { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 16px; }
+.check { display: flex; gap: 12px; align-items: flex-start; padding: 8px 4px; cursor: pointer; position: relative; }
+.check input { position: absolute; opacity: 0; }
+.check .box { width: 22px; height: 22px; border: 2px solid var(--ink); border-radius: 3px; flex-shrink: 0; margin-top: 1px; display: grid; place-items: center; background: var(--paper); }
+.check.on .box::after { content: "✓"; color: var(--violet); font-weight: 700; font-size: 20px; line-height: 1; transform: rotate(-8deg) translate(1px, -2px); }
+.check:has(input:focus-visible) { outline: 3px solid var(--violet); outline-offset: 2px; }
+.check small { display: block; color: var(--muted); font-size: 13.5px; }
+.form-error { color: var(--red); font-weight: 600; margin: 18px 0 0; }
+.sheet-foot { display: flex; gap: 10px; margin-top: 30px; padding-top: 18px; border-top: 2px solid var(--ink); }
