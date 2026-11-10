@@ -1,0 +1,21 @@
+/* Score tape */
+.tape { position: relative; padding-top: 52px; margin: 0 4px 12px; }
+.tape-marker { position: absolute; top: 0; bottom: 18px; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; z-index: 1; }
+.tape-marker::after { content: ""; flex: 1; width: 2.5px; background: var(--ink); }
+.tape-score { font-family: var(--display); font-stretch: 110%; font-weight: 800; font-size: 44px; line-height: 1; font-variant-numeric: tabular-nums; background: var(--paper); padding: 0 6px; }
+.tape-body {
+  position: relative; height: 34px; border: 1.5px solid var(--ink); border-radius: 3px; background-color: #f6f1dc;
+  background-image:
+    repeating-linear-gradient(90deg, var(--ink) 0 1px, transparent 1px 10%),
+    repeating-linear-gradient(90deg, rgba(29,36,51,.55) 0 1px, transparent 1px 2%);
+  background-size: 100% 45%, 100% 25%;
+  background-repeat: no-repeat;
+}
+.tape-band { position: absolute; bottom: 0; height: 6px; font-size: 0; opacity: .35; }
+.tape-band.here { height: 9px; opacity: 1; }
+.band-line-A { background: var(--band-A); } .band-line-B { background: var(--band-B); } .band-line-C { background: var(--band-C); }
+.band-line-D { background: var(--band-D); } .band-line-E { background: var(--band-E); }
+.tape-scale { position: relative; height: 18px; margin-top: 3px; font-size: 12.5px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.tape-scale span { position: absolute; transform: translateX(-50%); }
+.band-A { color: var(--band-A); } .band-B { color: var(--band-B); } .band-C { color: #8f6908; } .band-D { color: var(--band-D); } .band-E { color: var(--band-E); }
+.band-bg-A { background: var(--band-A); } .band-bg-B { background: var(--band-B); } .band-bg-C { background: var(--band-C); } .band-bg-D { background: var(--band-D); } .band-bg-E { background: var(--band-E); }
