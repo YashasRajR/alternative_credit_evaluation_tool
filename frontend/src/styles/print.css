@@ -1,0 +1,9 @@
+/* Printing or saving a result as PDF. */
+@media print {
+  :root { background: #fff; }
+  .topbar, footer, .no-print, .banner.warn { display: none !important; }
+  main { padding: 0; }
+  .stamp { animation: none; }
+  .paper, .record, .register, .sheet { box-shadow: none; }
+  .section { break-inside: avoid; }
+}
