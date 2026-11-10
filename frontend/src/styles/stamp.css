@@ -1,0 +1,17 @@
+/* The stamp */
+.stamp { width: 300px; flex-shrink: 0; margin: -6px -8px 0 0; transform: rotate(-6deg); mix-blend-mode: multiply; animation: stamp-down .42s cubic-bezier(.2, .9, .3, 1.25) .15s both; }
+.stamp svg { display: block; width: 100%; height: auto; overflow: visible; }
+.stamp-approve { color: var(--green); }
+.stamp-conditional { color: var(--violet); }
+.stamp-review { color: var(--ochre); }
+.stamp-decline { color: var(--red); transform: rotate(4deg); }
+.stamp-small { font-family: var(--display); font-stretch: 100%; font-weight: 600; font-size: 14px; }
+.stamp-big { font-family: var(--display); font-stretch: 82%; font-weight: 800; font-size: 44px; letter-spacing: .02em; }
+.stamp-big.long { font-size: 27px; font-stretch: 78%; }
+.stamp-hi { font-family: var(--hindi); font-weight: 600; font-size: 21px; }
+.stamp-amount { font-family: var(--display); font-stretch: 90%; font-weight: 800; font-size: 25px; }
+@keyframes stamp-down {
+  from { opacity: 0; transform: scale(1.5) rotate(-14deg); }
+  60% { opacity: 1; }
+  to { opacity: 1; }
+}
